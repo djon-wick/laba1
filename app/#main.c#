@@ -1,0 +1,32 @@
+int main()
+{
+    double x1, x2;
+    printf("Hello World!\n");
+    int k = korenb(&x1, &x2);
+    if(k == 2)
+        printf("x1 = %f, x2 = %f", x1, x2);
+    else
+        if(k == 1)
+            printf("x = %f", x1);
+        else
+            printf("Nan");
+    return myfunc(2);
+}
+#include <stdio.h>
+
+#include "myfunc.h"
+
+int main()
+{
+    double x1, x2;
+    printf("Hello World!\n");
+    int k = korenb(&x1, &x2);
+    if(k == 2)
+	printf("x1 = %f, x2 = %f", x1, x2);
+    else
+        if(k == 1)
+            printf("x = %f", x1);
+        else
+            printf("Nan");
+    return myfunc(2);
+}
